@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freshers Career Launch - Microsoft Careers Hub</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Launch your career with Microsoft. Discover opportunities for new graduates, build skills, connect with mentors, and start your journey in technology." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmicrosoft5383back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background font-sans">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 text-primary mr-3" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.4 24H0V12.6h11.4V24zM24 24H12.6V12.6H24V24zM11.4 11.4H0V0h11.4v11.4zM24 11.4H12.6V0H24v11.4z"/>
+                    </svg>
+                    <span class="text-xl font-segoe font-bold text-primary">Microsoft Careers</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_career_discovery_hub.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                    <a href="role_discovery_engine.html" class="text-text-secondary hover:text-primary transition-smooth">Explore Opportunities</a>
+                    <a href="career_development_hub.html" class="text-text-secondary hover:text-primary transition-smooth">Career Development</a>
+                    <a href="culture_experience_center.html" class="text-text-secondary hover:text-primary transition-smooth">Culture & Stories</a>
+                    <a href="application_dashboard.html" class="text-text-secondary hover:text-primary transition-smooth">Application Hub</a>
+                    <a href="freshers_career_launch.html" class="btn-primary">Get Started</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-background transition-smooth">
+                    <svg class="h-6 w-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-success via-success-light to-accent min-h-screen flex items-center overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-white">
+                    <div class="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 inline-block">
+                        🎓 New Graduate Program 2025
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-segoe font-bold mb-6 leading-tight">
+                        Launch Your
+                        <span class="text-accent-light">Tech Career</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-green-100 leading-relaxed">
+                        Join Microsoft's comprehensive new graduate program. From university to industry leader - we'll guide every step of your journey.
+                    </p>
+                    
+                    <!-- Quick Stats -->
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 mb-8">
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold text-accent-light">2,500+</div>
+                                <div class="text-sm text-green-100">New Hires Annually</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-accent-light">95%</div>
+                                <div class="text-sm text-green-100">Retention Rate</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-accent-light">18 Months</div>
+                                <div class="text-sm text-green-100">Avg. First Promotion</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="role_discovery_engine.html" class="bg-accent hover:bg-accent-light text-white px-8 py-4 rounded-lg font-semibold text-lg transition-smooth text-center">
+                            Explore Graduate Roles
+                        </a>
+                        <a href="#career-path-simulator" class="bg-white/20 hover:bg-white/30 text-white border border-white/30 px-8 py-4 rounded-lg font-semibold text-lg transition-smooth text-center backdrop-blur-sm">
+                            Try Career Simulator
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual -->
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Microsoft new graduate team collaboration" class="w-full h-80 object-cover rounded-xl" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="mt-6 text-center">
+                            <div class="text-lg font-semibold text-white mb-2">Join 2,500+ New Graduates</div>
+                            <div class="text-sm text-green-100">Starting their careers at Microsoft this year</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-segoe font-bold text-text-primary mb-4">
+                    Your Journey to Success
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Follow our structured pathway designed specifically for new graduates entering the tech industry.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-success to-accent hidden lg:block"></div>
+                
+                <div class="space-y-12">
+                    <!-- Step 1: Discover Your Path -->
+                    <div class="flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pr-12">
+                            <div class="card hover:shadow-card transition-smooth">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-success w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">1</div>
+                                    <h3 class="text-2xl font-segoe font-semibold text-text-primary">Discover Your Path</h3>
+                                </div>
+                                <p class="text-text-secondary mb-6">Explore different career tracks and find the perfect role that matches your skills, interests, and aspirations.</p>
+                                <div class="space-y-3">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Role exploration tools and assessments
+                                    </div>
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Career track comparisons
+                                    </div>
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Skills gap analysis
+                                    </div>
+                                </div>
+                                <a href="role_discovery_engine.html" class="inline-block mt-4 text-success font-semibold hover:text-green-800 transition-smooth">
+                                    Start Exploring →
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Career path discovery" class="w-full h-64 object-cover rounded-xl shadow-card" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg'; this.onerror=null;" />
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Build Your Skills -->
+                    <div class="flex flex-col lg:flex-row-reverse items-center gap-8">
+                        <div class="lg:w-1/2 lg:pl-12">
+                            <div class="card hover:shadow-card transition-smooth">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">2</div>
+                                    <h3 class="text-2xl font-segoe font-semibold text-text-primary">Build Your Skills</h3>
+                                </div>
+                                <p class="text-text-secondary mb-6">Enhance your technical and professional skills with Microsoft Learn integration and industry-recognized certifications.</p>
+                                <div class="space-y-3">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Microsoft Learn certification paths
+                                    </div>
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Technical skill assessments
+                                    </div>
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Personalized learning recommendations
+                                    </div>
+                                </div>
+                                <a href="career_development_hub.html" class="inline-block mt-4 text-primary font-semibold hover:text-primary-dark transition-smooth">
+                                    Start Learning →
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pr-12">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Skills development and learning" class="w-full h-64 object-cover rounded-xl shadow-card" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Connect & Network -->
+                    <div class="flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pr-12">
+                            <div class="card hover:shadow-card transition-smooth">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-accent w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">3</div>
+                                    <h3 class="text-2xl font-segoe font-semibold text-text-primary">Connect & Network</h3>
+                                </div>
+                                <p class="text-text-secondary mb-6">Build meaningful connections with Microsoft employees, mentors, and fellow graduates through our networking programs.</p>
+                                <div class="space-y-3">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Mentorship matching algorithm
+                                    </div>
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Employee resource groups
+                                    </div>
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Virtual networking events
+                                    </div>
+                                </div>
+                                <a href="culture_experience_center.html" class="inline-block mt-4 text-accent font-semibold hover:text-orange-600 transition-smooth">
+                                    Join Community →
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12">
+                            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Networking and mentorship" class="w-full h-64 object-cover rounded-xl shadow-card" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2015/07/02/10/22/training-828726_1280.jpg'; this.onerror=null;" />
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Launch Your Career -->
+                    <div class="flex flex-col lg:flex-row-reverse items-center gap-8">
+                        <div class="lg:w-1/2 lg:pl-12">
+                            <div class="card hover:shadow-card transition-smooth">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-warning w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">4</div>
+                                    <h3 class="text-2xl font-segoe font-semibold text-text-primary">Launch Your Career</h3>
+                                </div>
+                                <p class="text-text-secondary mb-6">Complete your journey with comprehensive interview preparation and application support to land your dream role.</p>
+                                <div class="space-y-3">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-warning mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Structured interview preparation
+                                    </div>
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-warning mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Application tracking and support
+                                    </div>
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <svg class="h-4 w-4 text-warning mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Onboarding preparation
+                                    </div>
+                                </div>
+                                <a href="application_dashboard.html" class="inline-block mt-4 text-warning font-semibold hover:text-orange-600 transition-smooth">
+                                    Apply Now →
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pr-12">
+                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Career launch and success" class="w-full h-64 object-cover rounded-xl shadow-card" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Path Simulator -->
+    <section id="career-path-simulator" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-segoe font-bold text-text-primary mb-4">
+                    Career Path Simulator
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Visualize your potential career progression at Microsoft with our interactive simulator.
+                </p>
+            </div>
+            
+            <div class="bg-surface rounded-2xl p-8 shadow-card">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Simulator Controls -->
+                    <div>
+                        <h3 class="text-xl font-segoe font-semibold text-text-primary mb-6">Choose Your Starting Role</h3>
+                        <div class="space-y-4">
+                            <div class="card-elevated cursor-pointer hover:shadow-card transition-smooth border-2 border-primary">
+                                <div class="flex items-center">
+                                    <div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Software Engineer I</div>
+                                        <div class="text-sm text-text-secondary">Entry-level development role</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-elevated cursor-pointer hover:shadow-card transition-smooth border-2 border-transparent hover:border-success">
+                                <div class="flex items-center">
+                                    <div class="bg-success/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="h-6 w-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Data Scientist I</div>
+                                        <div class="text-sm text-text-secondary">Analytics and ML focus</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-elevated cursor-pointer hover:shadow-card transition-smooth border-2 border-transparent hover:border-accent">
+                                <div class="flex items-center">
+                                    <div class="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Product Manager I</div>
+                                        <div class="text-sm text-text-secondary">Product strategy and execution</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-segoe font-semibold text-text-primary mb-4">Career Progression Timeline</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-primary rounded-full mr-4"></div>
+                                    <div class="flex-1">
+                                        <div class="font-medium text-text-primary">Year 0-2: Software Engineer I</div>
+                                        <div class="text-sm text-text-secondary">$120K - $150K base salary</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-success rounded-full mr-4"></div>
+                                    <div class="flex-1">
+                                        <div class="font-medium text-text-primary">Year 2-4: Software Engineer II</div>
+                                        <div class="text-sm text-text-secondary">$150K - $180K base salary</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-accent rounded-full mr-4"></div>
+                                    <div class="flex-1">
+                                        <div class="font-medium text-text-primary">Year 4-6: Senior Software Engineer</div>
+                                        <div class="text-sm text-text-secondary">$180K - $220K base salary</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-warning rounded-full mr-4"></div>
+                                    <div class="flex-1">
+                                        <div class="font-medium text-text-primary">Year 6+: Principal Engineer</div>
+                                        <div class="text-sm text-text-secondary">$220K+ base salary</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Progression Visualization -->
+                    <div>
+                        <div class="bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-6">
+                            <h4 class="font-segoe font-semibold text-text-primary mb-6">Your Projected Path</h4>
+                            <div class="relative">
+                                <!-- Career Path Chart -->
+                                <svg class="w-full h-64" viewBox="0 0 400 200">
+                                    <!-- Grid lines -->
+                                    <defs>
+                                        <pattern id="grid-pattern" width="40" height="20" patternUnits="userSpaceOnUse">
+                                            <path d="M 40 0 L 0 0 0 20" fill="none" stroke="#E1DFDD" stroke-width="0.5"/>
+                                        </pattern>
+                                    </defs>
+                                    <rect width="400" height="200" fill="url(#grid-pattern)"/>
+                                    
+                                    <!-- Career progression line -->
+                                    <path d="M 20 180 Q 100 160 150 120 Q 250 80 350 40" fill="none" stroke="url(#gradient)" stroke-width="3"/>
+                                    
+                                    <!-- Gradient definition -->
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#107C10"/>
+                                            <stop offset="50%" style="stop-color:#0078D4"/>
+                                            <stop offset="100%" style="stop-color:#FF8C00"/>
+                                        </linearGradient>
+                                    </defs>
+                                    
+                                    <!-- Data points -->
+                                    <circle cx="20" cy="180" r="4" fill="#107C10"/>
+                                    <circle cx="150" cy="120" r="4" fill="#0078D4"/>
+                                    <circle cx="280" cy="70" r="4" fill="#FF8C00"/>
+                                    <circle cx="350" cy="40" r="4" fill="#D13438"/>
+                                    
+                                    <!-- Labels -->
+                                    <text x="20" y="195" text-anchor="middle" class="text-xs fill-current text-text-secondary">Year 0</text>
+                                    <text x="150" y="195" text-anchor="middle" class="text-xs fill-current text-text-secondary">Year 2</text>
+                                    <text x="280" y="195" text-anchor="middle" class="text-xs fill-current text-text-secondary">Year 4</text>
+                                    <text x="350" y="195" text-anchor="middle" class="text-xs fill-current text-text-secondary">Year 6+</text>
+                                </svg>
+                            </div>
+                            
+                            <div class="mt-6 grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-primary">$2.1M</div>
+                                    <div class="text-sm text-text-secondary">Total Compensation (6 years)</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-success">85%</div>
+                                    <div class="text-sm text-text-secondary">Promotion Success Rate</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <a href="role_discovery_engine.html" class="btn-primary w-full text-center">
+                                Explore Available Roles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graduate Success Stories -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-segoe font-bold text-text-primary mb-4">
+                    Graduate Success Stories
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Real stories from Microsoft graduates who started their careers with us and achieved remarkable growth.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Success Story 1 -->
+                <div class="card-elevated group hover:shadow-card transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alex Rodriguez, Software Engineer" class="w-20 h-20 rounded-full object-cover mx-auto" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-success text-white px-3 py-1 rounded-full text-xs">
+                            Promoted in 18 months
+                        </div>
+                    </div>
+                    <blockquote class="text-text-secondary italic mb-4">
+                        "From a computer science graduate to Senior Software Engineer in just 18 months. Microsoft's mentorship program and growth opportunities exceeded all my expectations."
+                    </blockquote>
+                    <div class="text-center">
+                        <div class="font-semibold text-text-primary">Alex Rodriguez</div>
+                        <div class="text-sm text-text-secondary">Senior Software Engineer, Azure</div>
+                        <div class="text-xs text-success mt-1">Started as SDE I in 2023</div>
+                    </div>
+                </div>
+                
+                <!-- Success Story 2 -->
+                <div class="card-elevated group hover:shadow-card transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Maya Patel, Data Scientist" class="w-20 h-20 rounded-full object-cover mx-auto" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-primary text-white px-3 py-1 rounded-full text-xs">
+                            Leading AI Projects
+                        </div>
+                    </div>
+                    <blockquote class="text-text-secondary italic mb-4">
+                        "Microsoft's new graduate program gave me the foundation to work on cutting-edge AI projects. Now I'm leading a team of 5 data scientists working on breakthrough ML models."
+                    </blockquote>
+                    <div class="text-center">
+                        <div class="font-semibold text-text-primary">Maya Patel</div>
+                        <div class="text-sm text-text-secondary">Senior Data Scientist, AI Research</div>
+                        <div class="text-xs text-success mt-1">Started as Data Scientist I in 2022</div>
+                    </div>
+                </div>
+                
+                <!-- Success Story 3 -->
+                <div class="card-elevated group hover:shadow-card transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jordan Kim, Product Manager" class="w-20 h-20 rounded-full object-cover mx-auto" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-accent text-white px-3 py-1 rounded-full text-xs">
+                            Product Launch Success
+                        </div>
+                    </div>
+                    <blockquote class="text-text-secondary italic mb-4">
+                        "Starting as a PM intern and now managing a product used by millions. The mentorship and cross-functional collaboration at Microsoft shaped my career trajectory."
+                    </blockquote>
+                    <div class="text-center">
+                        <div class="font-semibold text-text-primary">Jordan Kim</div>
+                        <div class="text-sm text-text-secondary">Senior Product Manager, Teams</div>
+                        <div class="text-xs text-success mt-1">Started as PM Intern in 2021</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Partnerships -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-segoe font-bold text-text-primary mb-4">
+                    University Partnerships
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    We partner with leading universities worldwide to identify and nurture the next generation of tech talent.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-8">
+                        <!-- Partnership Stats -->
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">500+</div>
+                                <div class="text-text-secondary">University Partners</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-success mb-2">50K+</div>
+                                <div class="text-text-secondary">Students Reached</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured Universities -->
+                        <div>
+                            <h3 class="text-xl font-segoe font-semibold text-text-primary mb-6">Featured University Partners</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center p-4 bg-surface rounded-lg shadow-subtle">
+                                    <div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">MIT & Stanford</div>
+                                        <div class="text-sm text-text-secondary">Computer Science & Engineering Programs</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center p-4 bg-surface rounded-lg shadow-subtle">
+                                    <div class="bg-success/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="h-6 w-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">HBCUs & Hispanic-Serving Institutions</div>
+                                        <div class="text-sm text-text-secondary">Diversity & Inclusion Focus</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center p-4 bg-surface rounded-lg shadow-subtle">
+                                    <div class="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Global Universities</div>
+                                        <div class="text-sm text-text-secondary">International Talent Pipeline</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Campus Events -->
+                        <div>
+                            <h3 class="text-xl font-segoe font-semibold text-text-primary mb-4">Upcoming Campus Events</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-surface rounded-lg shadow-subtle">
+                                    <div>
+                                        <div class="font-medium text-text-primary">Microsoft Tech Talk - Stanford</div>
+                                        <div class="text-sm text-text-secondary">AI & Machine Learning Careers</div>
+                                    </div>
+                                    <div class="text-sm text-primary font-medium">Mar 15</div>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-surface rounded-lg shadow-subtle">
+                                    <div>
+                                        <div class="font-medium text-text-primary">Hackathon - MIT</div>
+                                        <div class="text-sm text-text-secondary">Cloud Solutions Challenge</div>
+                                    </div>
+                                    <div class="text-sm text-primary font-medium">Mar 22</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9d1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="University campus and students" class="w-full h-96 object-cover rounded-xl shadow-card" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship & Co-op Programs -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-segoe font-bold text-text-primary mb-4">
+                    Internship & Co-op Programs
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Get hands-on experience with real projects, mentorship, and a clear path to full-time opportunities.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Summer Internship -->
+                <div class="card hover:shadow-card transition-smooth">
+                    <div class="text-center mb-6">
+                        <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-segoe font-semibold text-text-primary mb-2">Summer Internship</h3>
+                        <p class="text-text-secondary mb-4">12-week immersive program with real project ownership and mentorship.</p>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <svg class="h-4 w-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-secondary">June - August program</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="h-4 w-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-secondary">$8,000/month stipend</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="h-4 w-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-secondary">85% conversion to full-time</span>
+                        </div>
+                    </div>
+                    <div class="bg-primary/5 rounded-lg p-4 mb-4">
+                        <div class="text-sm font-medium text-text-primary mb-1">Application Deadline</div>
+                        <div class="text-primary font-semibold">January 31, 2025</div>
+                    </div>
+                    <a href="application_dashboard.html" class="btn-primary w-full text-center">Apply Now</a>
+                </div>
+                
+                <!-- Co-op Program -->
+                <div class="card hover:shadow-card transition-smooth">
+                    <div class="text-center mb-6">
+                        <div class="bg-success/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="h-8 w-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-segoe font-semibold text-text-primary mb-2">Co-op Program</h3>
+                        <p class="text-text-secondary mb-4">6-month extended program with deeper project involvement and team integration.</p>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <svg class="h-4 w-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-secondary">6-month commitment</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="h-4 w-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-secondary">Full employee benefits</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="h-4 w-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-secondary">92% conversion rate</span>
+                        </div>
+                    </div>
+                    <div class="bg-success/5 rounded-lg p-4 mb-4">
+                        <div class="text-sm font-medium text-text-primary mb-1">Next Intake</div>
+                        <div class="text-success font-semibold">September 2025</div>
+                    </div>
+                    <a href="application_dashboard.html" class="btn-secondary w-full text-center">Learn More</a>
+                </div>
+                
+                <!-- PhD Internship -->
+                <div class="card hover:shadow-card transition-smooth">
+                    <div class="text-center mb-6">
+                        <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="h-8 w-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-segoe font-semibold text-text-primary mb-2">PhD Research Internship</h3>
+                        <p class="text-text-secondary mb-4">Advanced research opportunities for PhD candidates in AI, ML, and systems.</p>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <svg class="h-4 w-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-secondary">Research publication opportunities</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="h-4 w-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-secondary">$10,000/month stipend</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="h-4 w-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-secondary">Direct path to Research Scientist</span>
+                        </div>
+                    </div>
+                    <div class="bg-accent/5 rounded-lg p-4 mb-4">
+                        <div class="text-sm font-medium text-text-primary mb-1">Rolling Applications</div>
+                        <div class="text-accent font-semibold">Apply Anytime</div>
+                    </div>
+                    <a href="application_dashboard.html" class="btn-secondary w-full text-center">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <svg class="h-8 w-8 text-accent mr-3" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.4 24H0V12.6h11.4V24zM24 24H12.6V12.6H24V24zM11.4 11.4H0V0h11.4v11.4zM24 11.4H12.6V0H24v11.4z"/>
+                        </svg>
+                        <span class="text-xl font-segoe font-bold">Microsoft Careers</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Empowering every person and organization on the planet to achieve more.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-smooth">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-smooth">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-segoe font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                        <li><a href="role_discovery_engine.html" class="text-gray-300 hover:text-accent transition-smooth">Browse Jobs</a></li>
+                        <li><a href="freshers_career_launch.html" class="text-gray-300 hover:text-accent transition-smooth">New Graduates</a></li>
+                        <li><a href="career_development_hub.html" class="text-gray-300 hover:text-accent transition-smooth">Career Development</a></li>
+                        <li><a href="culture_experience_center.html" class="text-gray-300 hover:text-accent transition-smooth">Our Culture</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 class="font-segoe font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="application_dashboard.html" class="text-gray-300 hover:text-accent transition-smooth">Application Status</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-smooth">Interview Prep</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-smooth">FAQ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-smooth">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-segoe font-semibold mb-4">Stay Updated</h4>
+                    <p class="text-gray-300 mb-4">Get the latest job opportunities and career insights.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 bg-gray-800 border border-gray-600 rounded-l-lg focus:ring-2 focus:ring-accent focus:border-accent focus:outline-none text-white" />
+                        <button class="bg-accent hover:bg-accent-light px-4 py-2 rounded-r-lg transition-smooth">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">© 2025 Microsoft Corporation. All Rights Reserved.</p>
+                <p class="text-gray-400">Maheswari Pinneti</p>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

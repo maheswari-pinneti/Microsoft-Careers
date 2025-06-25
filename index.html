@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft Careers - Transform Your Future</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0078D4, #005A9E, #106EBE);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            overflow: hidden;
+        }
+        .loader-container {
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        .microsoft-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .logo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 4px;
+            width: 48px;
+            height: 48px;
+        }
+        .logo-square {
+            border-radius: 2px;
+            animation: pulse-color 2s infinite;
+        }
+        .logo-square:nth-child(1) { background: #F25022; animation-delay: 0s; }
+        .logo-square:nth-child(2) { background: #7FBA00; animation-delay: 0.2s; }
+        .logo-square:nth-child(3) { background: #00A4EF; animation-delay: 0.4s; }
+        .logo-square:nth-child(4) { background: #FFB900; animation-delay: 0.6s; }
+        
+        @keyframes pulse-color {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            border-top: 4px solid #00A4EF;
+            border-right: 4px solid #7FBA00;
+            border-bottom: 4px solid #FFB900;
+            border-left: 4px solid #F25022;
+            width: 60px;
+            height: 60px;
+            animation: spin 1.5s linear infinite;
+            margin: 0 auto 30px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .redirect-text {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #FFFFFF, #E3F2FD);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            color: #E3F2FD;
+        }
+        
+        .page-list {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .page-list h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #FFFFFF;
+        }
+        
+        .page-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .page-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            font-size: 13px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        
+        .page-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-1px);
+        }
+        
+        .page-item::before {
+            content: "●";
+            color: #00A4EF;
+            margin-right: 8px;
+            font-size: 10px;
+        }
+        
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .loading-bar {
+            width: 200px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        
+        .loading-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00A4EF, #7FBA00, #FFB900, #F25022);
+            border-radius: 2px;
+            animation: loading 3s ease-in-out;
+            width: 0%;
+        }
+        
+        @keyframes loading {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        
+        @media (max-width: 768px) {
+            .page-grid {
+                grid-template-columns: 1fr;
+            }
+            .redirect-text {
+                font-size: 20px;
+            }
+            .page-list {
+                margin-top: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmicrosoft5383back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    
+    <div class="loader-container">
+        <div class="microsoft-logo">
+            <div class="logo-grid">
+                <div class="logo-square"></div>
+                <div class="logo-square"></div>
+                <div class="logo-square"></div>
+                <div class="logo-square"></div>
+            </div>
+        </div>
+        
+        <div class="spinner"></div>
+        
+        <div class="redirect-text">Launching Microsoft Careers</div>
+        <div class="subtitle">Empowering every person and organization on the planet to achieve more</div>
+        
+        <div class="loading-bar">
+            <div class="loading-fill"></div>
+        </div>
+        
+        <div class="page-list">
+            <h3>Discover Your Path at Microsoft</h3>
+            <ul class="page-grid">
+                <li class="page-item">Career Discovery Hub</li>
+                <li class="page-item">Freshers Launch Pad</li>
+                <li class="page-item">Role Discovery Engine</li>
+                <li class="page-item">Application Dashboard</li>
+                <li class="page-item">Culture Experience</li>
+                <li class="page-item">Development Hub</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Enhanced page list with Microsoft-specific features
+        const pages = [
+            'homepage_career_discovery_hub.html',
+            'freshers_career_launch.html',
+            'role_discovery_engine.html',
+            'application_dashboard.html',
+            'culture_experience_center.html',
+            'career_development_hub.html'
+        ];
+
+        // Enhanced redirect function with Microsoft branding
+        function redirectToPage() {
+            // Add smooth transition effect
+            document.body.style.transition = 'opacity 0.5s ease-out';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '0.8';
+            }, 1500);
+            
+            setTimeout(() => {
+                window.location.href = `pages/${pages[0]}`;
+            }, 2500); // Extended loading time for better UX
+        }
+
+        // Enhanced user interaction
+        window.addEventListener('load', () => {
+            redirectToPage();
+            
+            // Add Microsoft-style accessibility announcements
+            const announcement = document.createElement('div');
+            announcement.setAttribute('aria-live', 'polite');
+            announcement.setAttribute('aria-atomic', 'true');
+            announcement.style.position = 'absolute';
+            announcement.style.left = '-10000px';
+            announcement.style.width = '1px';
+            announcement.style.height = '1px';
+            announcement.style.overflow = 'hidden';
+            announcement.textContent = 'Microsoft Careers platform is loading. Please wait.';
+            document.body.appendChild(announcement);
+        });
+
+        // Enhanced click interaction
+        document.addEventListener('click', () => {
+            window.location.href = `pages/${pages[0]}`;
+        });
+
+        // Add keyboard navigation for accessibility
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                window.location.href = `pages/${pages[0]}`;
+            }
+        });
+
+        // Add Microsoft-style focus management
+        document.body.setAttribute('tabindex', '0');
+        document.body.focus();
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>

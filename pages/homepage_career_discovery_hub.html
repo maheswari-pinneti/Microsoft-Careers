@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft Careers - Discover Your Future | Official Microsoft Careers Portal</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" href="../public/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Join Microsoft and transform your career. Discover opportunities, connect with our culture, and find your path to making a global impact. Official Microsoft careers portal." />
+    <meta name="keywords" content="Microsoft careers, Microsoft jobs, tech careers, software engineering, Azure, Office 365, Microsoft culture" />
+    
+    <!-- Open Graph / Microsoft specific -->
+    <meta property="og:title" content="Microsoft Careers - Discover Your Future" />
+    <meta property="og:description" content="Join Microsoft and transform your career. Discover opportunities that match your ambitions and values." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Microsoft Fluent Design CSS additions -->
+    <style>
+        :root {
+            --fluent-shadow-2: 0 0.2px 0.4px rgba(0,0,0,0.02), 0 0.4px 0.8px rgba(0,0,0,0.028), 0 0.9px 1.7px rgba(0,0,0,0.035), 0 1.8px 3.5px rgba(0,0,0,0.042), 0 3.7px 7.3px rgba(0,0,0,0.05), 0 10px 20px rgba(0,0,0,0.07);
+            --fluent-shadow-4: 0 0.3px 0.4px rgba(0,0,0,0.024), 0 0.9px 1.5px rgba(0,0,0,0.05), 0 3.5px 6px rgba(0,0,0,0.1), 0 14px 25px rgba(0,0,0,0.15);
+        }
+        
+        .fluent-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: var(--fluent-shadow-2);
+            transition: all 0.3s cubic-bezier(0.1, 0.9, 0.2, 1);
+        }
+        
+        .fluent-card:hover {
+            box-shadow: var(--fluent-shadow-4);
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.8);
+        }
+        
+        .fluent-button {
+            background: linear-gradient(135deg, #0078D4 0%, #106EBE 100%);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: 600;
+            transition: all 0.2s cubic-bezier(0.1, 0.9, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .fluent-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .fluent-button:hover::before {
+            left: 100%;
+        }
+        
+        .fluent-button:hover {
+            background: linear-gradient(135deg, #106EBE 0%, #005A9E 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 120, 212, 0.3);
+        }
+        
+        .microsoft-grid {
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(0, 120, 212, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(16, 110, 190, 0.1) 0%, transparent 50%);
+        }
+        
+        .accessibility-focus:focus {
+            outline: 2px solid #0078D4;
+            outline-offset: 2px;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0078D4 0%, #005A9E 35%, #106EBE 100%);
+        }
+        
+        .microsoft-acrylic {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmicrosoft5383back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background font-sans">
+    <!-- Enhanced Navigation Header with Microsoft Fluent Design -->
+    <nav class="bg-surface shadow-subtle sticky top-0 z-50 microsoft-acrylic">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Enhanced Microsoft Logo -->
+                <div class="flex items-center">
+                    <div class="flex mr-3">
+                        <div class="grid grid-cols-2 gap-0.5 w-8 h-8">
+                            <div class="bg-red-500 rounded-sm" style="background: #F25022;"></div>
+                            <div class="bg-green-500 rounded-sm" style="background: #7FBA00;"></div>
+                            <div class="bg-blue-500 rounded-sm" style="background: #00A4EF;"></div>
+                            <div class="bg-yellow-500 rounded-sm" style="background: #FFB900;"></div>
+                        </div>
+                    </div>
+                    <span class="text-xl font-segoe font-bold text-primary">Microsoft</span>
+                    <span class="text-xl font-segoe font-normal text-text-secondary ml-2">Careers</span>
+                </div>
+                
+                <!-- Enhanced Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="role_discovery_engine.html" class="text-text-secondary hover:text-primary transition-smooth accessibility-focus font-medium">Explore Opportunities</a>
+                    <a href="career_development_hub.html" class="text-text-secondary hover:text-primary transition-smooth accessibility-focus font-medium">Career Development</a>
+                    <a href="culture_experience_center.html" class="text-text-secondary hover:text-primary transition-smooth accessibility-focus font-medium">Culture & Stories</a>
+                    <a href="application_dashboard.html" class="text-text-secondary hover:text-primary transition-smooth accessibility-focus font-medium">Application Hub</a>
+                    <a href="freshers_career_launch.html" class="fluent-button px-6 py-2 accessibility-focus">Get Started</a>
+                </div>
+                
+                <!-- Enhanced Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-background transition-smooth accessibility-focus" aria-label="Open navigation menu">
+                    <svg class="h-6 w-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section with Microsoft Fluent Design -->
+    <section class="relative hero-gradient min-h-screen flex items-center overflow-hidden microsoft-grid">
+        <!-- Enhanced Background Pattern -->
+        <div class="absolute inset-0 opacity-20">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="microsoft-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.3"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#microsoft-grid)"/>
+            </svg>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Enhanced Hero Content -->
+                <div class="text-white">
+                    <div class="flex items-center mb-6">
+                        <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">🚀 Now Hiring: 2,847+ Positions</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-segoe font-bold mb-6 leading-tight">
+                        Your Career,
+                        <span class="text-accent-light">Amplified</span>
+                        <br />by Microsoft
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+                        Join Microsoft and transform your potential into global impact. Discover opportunities that match your ambitions and our mission to empower every person and organization on the planet to achieve more.
+                    </p>
+                    
+                    <!-- Enhanced Intelligent Search Bar -->
+                    <div class="microsoft-acrylic rounded-xl p-6 mb-8">
+                        <h3 class="text-lg font-segoe font-semibold text-white mb-4">Find Your Perfect Role</h3>
+                        <div class="relative">
+                            <input type="text" placeholder="Search: AI researcher, remote software engineer, product manager..." class="w-full px-6 py-4 bg-white rounded-lg text-text-primary placeholder-text-secondary focus:ring-2 focus:ring-accent focus:outline-none text-lg accessibility-focus" aria-label="Job search input" />
+                            <button class="absolute right-2 top-2 fluent-button px-6 py-2 rounded-lg accessibility-focus" aria-label="Search jobs">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <button class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full text-sm transition-smooth accessibility-focus">AI & Machine Learning</button>
+                            <button class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full text-sm transition-smooth accessibility-focus">Azure Cloud</button>
+                            <button class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full text-sm transition-smooth accessibility-focus">Product Management</button>
+                            <button class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full text-sm transition-smooth accessibility-focus">Remote Work</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Enhanced CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="role_discovery_engine.html" class="fluent-button px-8 py-4 rounded-lg font-semibold text-lg text-center accessibility-focus bg-accent hover:bg-accent-light">
+                            Explore 2,847+ Opportunities
+                        </a>
+                        <a href="culture_experience_center.html" class="bg-white/20 hover:bg-white/30 text-white border border-white/30 px-8 py-4 rounded-lg font-semibold text-lg transition-smooth text-center backdrop-blur-sm accessibility-focus">
+                            Discover Our Culture
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Hero Visual -->
+                <div class="relative">
+                    <div class="fluent-card p-8">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Microsoft team collaboration showcasing diverse professionals working together" class="w-full h-80 object-cover rounded-xl" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        
+                        <!-- Enhanced Stats -->
+                        <div class="mt-6 grid grid-cols-3 gap-4 text-center">
+                            <div class="fluent-card p-4">
+                                <div class="text-2xl font-bold text-primary">2,847</div>
+                                <div class="text-sm text-text-secondary">Open Positions</div>
+                            </div>
+                            <div class="fluent-card p-4">
+                                <div class="text-2xl font-bold text-accent">190+</div>
+                                <div class="text-sm text-text-secondary">Countries</div>
+                            </div>
+                            <div class="fluent-card p-4">
+                                <div class="text-2xl font-bold text-success">95%</div>
+                                <div class="text-sm text-text-secondary">Employee Satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Career Pathway Cards -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-segoe font-bold text-text-primary mb-4">
+                    Find Your Path Forward at Microsoft
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Whether you're starting your career or looking to make your next move, we have tailored pathways designed specifically for your journey at Microsoft.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Enhanced New Graduate Card -->
+                <div class="fluent-card p-6 hover:shadow-card transition-smooth group cursor-pointer accessibility-focus" onclick="window.location.href='freshers_career_launch.html'" tabindex="0" role="button" aria-label="Learn about new graduate programs">
+                    <div class="text-center">
+                        <div class="bg-success-light/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-success-light/20 transition-smooth">
+                            <svg class="h-8 w-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-segoe font-semibold text-text-primary mb-3">New Graduate Launch Pad</h3>
+                        <p class="text-text-secondary mb-4">Start your Microsoft journey with comprehensive support, mentorship, and structured learning paths designed for new graduates.</p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="bg-success-light/10 text-success text-xs px-3 py-1 rounded-full">University Partners</span>
+                            <span class="bg-success-light/10 text-success text-xs px-3 py-1 rounded-full">Mentorship Program</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experienced Professional Card -->
+                <div class="card hover:shadow-card transition-smooth group cursor-pointer" onclick="window.location.href='role_discovery_engine.html'">
+                    <div class="text-center">
+                        <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-smooth">
+                            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-segoe font-semibold text-text-primary mb-3">Experienced Professional</h3>
+                        <p class="text-text-secondary mb-4">Advance your career with roles in cloud architecture, AI research, and product leadership.</p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Cloud Architect</span>
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Product Manager</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Career Switcher Card -->
+                <div class="card hover:shadow-card transition-smooth group cursor-pointer" onclick="window.location.href='career_development_hub.html'">
+                    <div class="text-center">
+                        <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-smooth">
+                            <svg class="h-8 w-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-segoe font-semibold text-text-primary mb-3">Career Switcher Support</h3>
+                        <p class="text-text-secondary mb-4">Transition into tech with reskilling programs and comprehensive career pivot support.</p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded-full">Reskilling</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded-full">Career Pivot</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Internal Mobility Card -->
+                <div class="card hover:shadow-card transition-smooth group cursor-pointer" onclick="window.location.href='application_dashboard.html'">
+                    <div class="text-center">
+                        <div class="bg-warning/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-warning/20 transition-smooth">
+                            <svg class="h-8 w-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-segoe font-semibold text-text-primary mb-3">Internal Mobility</h3>
+                        <p class="text-text-secondary mb-4">Current employees can explore cross-team opportunities and leadership development paths.</p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="bg-warning/10 text-warning text-xs px-2 py-1 rounded-full">Cross-Team</span>
+                            <span class="bg-warning/10 text-warning text-xs px-2 py-1 rounded-full">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Story Carousel -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-segoe font-bold text-text-primary mb-4">
+                    Stories of Growth & Impact
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Hear from Microsoft employees about their career journeys and the impact they're making.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Story Card 1 -->
+                <div class="card-elevated group hover:shadow-card transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sarah Chen, AI Research Engineer" class="w-20 h-20 rounded-full object-cover mx-auto" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-primary text-white px-3 py-1 rounded-full text-xs">
+                            AI Research
+                        </div>
+                    </div>
+                    <blockquote class="text-text-secondary italic mb-4">
+                        "From a computer science graduate to leading AI research projects that impact millions of users worldwide. Microsoft gave me the platform to turn my passion into purpose."
+                    </blockquote>
+                    <div class="text-center">
+                        <div class="font-semibold text-text-primary">Sarah Chen</div>
+                        <div class="text-sm text-text-secondary">Senior AI Research Engineer</div>
+                        <div class="text-xs text-success mt-1">3 years at Microsoft</div>
+                    </div>
+                </div>
+                
+                <!-- Story Card 2 -->
+                <div class="card-elevated group hover:shadow-card transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Marcus Johnson, Cloud Solutions Architect" class="w-20 h-20 rounded-full object-cover mx-auto" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-accent text-white px-3 py-1 rounded-full text-xs">
+                            Cloud Solutions
+                        </div>
+                    </div>
+                    <blockquote class="text-text-secondary italic mb-4">
+                        "Transitioning from finance to tech seemed impossible until Microsoft's reskilling program opened doors. Now I architect cloud solutions for Fortune 500 companies."
+                    </blockquote>
+                    <div class="text-center">
+                        <div class="font-semibold text-text-primary">Marcus Johnson</div>
+                        <div class="text-sm text-text-secondary">Principal Cloud Solutions Architect</div>
+                        <div class="text-xs text-success mt-1">5 years at Microsoft</div>
+                    </div>
+                </div>
+                
+                <!-- Story Card 3 -->
+                <div class="card-elevated group hover:shadow-card transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2761&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Priya Patel, Product Manager" class="w-20 h-20 rounded-full object-cover mx-auto" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-success text-white px-3 py-1 rounded-full text-xs">
+                            Product Management
+                        </div>
+                    </div>
+                    <blockquote class="text-text-secondary italic mb-4">
+                        "Starting as an intern and growing into a product manager for Teams has been incredible. The mentorship and growth opportunities here are unmatched."
+                    </blockquote>
+                    <div class="text-center">
+                        <div class="font-semibold text-text-primary">Priya Patel</div>
+                        <div class="text-sm text-text-secondary">Senior Product Manager, Teams</div>
+                        <div class="text-xs text-success mt-1">4 years at Microsoft</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="culture_experience_center.html" class="btn-secondary">
+                    View More Stories
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Spotlight -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-segoe font-bold text-text-primary mb-4">
+                    Innovation Spotlight
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Join projects that are shaping the future of technology and making a meaningful impact on the world.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Azure Development -->
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" onclick="window.location.href='role_discovery_engine.html'">
+                    <img src="https://images.unsplash.com/photo-1451187580459-971dccb5ac1e?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Azure Cloud Development" class="w-full h-64 object-cover group-hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-segoe font-semibold mb-2">Azure Cloud Platform</h3>
+                        <p class="text-sm text-gray-200 mb-3">Build the infrastructure that powers millions of applications worldwide</p>
+                        <div class="flex items-center text-accent-light">
+                            <span class="text-sm font-medium">Explore Azure Roles</span>
+                            <svg class="h-4 w-4 ml-2 group-hover:translate-x-1 transition-smooth" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI Research -->
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" onclick="window.location.href='role_discovery_engine.html'">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AI and Machine Learning Research" class="w-full h-64 object-cover group-hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2023/01/26/22/13/ai-generated-7747171_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-segoe font-semibold mb-2">AI & Machine Learning</h3>
+                        <p class="text-sm text-gray-200 mb-3">Advance the frontiers of artificial intelligence and machine learning</p>
+                        <div class="flex items-center text-accent-light">
+                            <span class="text-sm font-medium">Explore AI Roles</span>
+                            <svg class="h-4 w-4 ml-2 group-hover:translate-x-1 transition-smooth" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sustainability -->
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" onclick="window.location.href='role_discovery_engine.html'">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sustainability Initiatives" class="w-full h-64 object-cover group-hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-segoe font-semibold mb-2">Sustainability Impact</h3>
+                        <p class="text-sm text-gray-200 mb-3">Drive environmental initiatives and carbon-negative technologies</p>
+                        <div class="flex items-center text-accent-light">
+                            <span class="text-sm font-medium">Explore Green Tech Roles</span>
+                            <svg class="h-4 w-4 ml-2 group-hover:translate-x-1 transition-smooth" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools Preview -->
+    <section class="py-20 bg-gradient-to-br from-background to-border-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-segoe font-bold text-text-primary mb-4">
+                    Tools to Guide Your Journey
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Use our intelligent tools to assess your skills, explore salary ranges, and find your cultural fit.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Skills Assessment -->
+                <div class="card hover:shadow-card transition-smooth text-center group cursor-pointer" onclick="window.location.href='career_development_hub.html'">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-smooth">
+                        <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-segoe font-semibold text-text-primary mb-4">Skills Assessment</h3>
+                    <p class="text-text-secondary mb-6">Discover your strengths and identify areas for growth with our comprehensive skills evaluation.</p>
+                    <div class="bg-primary/5 rounded-lg p-4 mb-6">
+                        <div class="text-sm text-text-secondary mb-2">Assessment Progress</div>
+                        <div class="bg-border-light rounded-full h-2">
+                            <div class="bg-primary rounded-full h-2 w-3/4 transition-smooth"></div>
+                        </div>
+                        <div class="text-xs text-primary mt-1">75% Complete</div>
+                    </div>
+                    <button class="text-primary font-semibold hover:text-primary-dark transition-smooth">
+                        Start Assessment →
+                    </button>
+                </div>
+                
+                <!-- Salary Benchmarking -->
+                <div class="card hover:shadow-card transition-smooth text-center group cursor-pointer" onclick="window.location.href='career_development_hub.html'">
+                    <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-smooth">
+                        <svg class="h-8 w-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-segoe font-semibold text-text-primary mb-4">Salary Benchmarking</h3>
+                    <p class="text-text-secondary mb-6">Get insights into competitive salary ranges for your role and experience level.</p>
+                    <div class="bg-accent/5 rounded-lg p-4 mb-6">
+                        <div class="text-sm text-text-secondary mb-2">Software Engineer - Seattle</div>
+                        <div class="text-2xl font-bold text-accent">$145K - $185K</div>
+                        <div class="text-xs text-text-secondary mt-1">Base salary range</div>
+                    </div>
+                    <button class="text-accent font-semibold hover:text-orange-600 transition-smooth">
+                        Explore Salaries →
+                    </button>
+                </div>
+                
+                <!-- Cultural Fit Quiz -->
+                <div class="card hover:shadow-card transition-smooth text-center group cursor-pointer" onclick="window.location.href='culture_experience_center.html'">
+                    <div class="bg-success/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-success/20 transition-smooth">
+                        <svg class="h-8 w-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-segoe font-semibold text-text-primary mb-4">Cultural Fit Quiz</h3>
+                    <p class="text-text-secondary mb-6">Discover how your values align with Microsoft's culture and work environment.</p>
+                    <div class="bg-success/5 rounded-lg p-4 mb-6">
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                            <div class="w-3 h-3 bg-border rounded-full"></div>
+                            <div class="w-3 h-3 bg-border rounded-full"></div>
+                        </div>
+                        <div class="text-xs text-success mt-2">Question 3 of 5</div>
+                    </div>
+                    <button class="text-success font-semibold hover:text-green-800 transition-smooth">
+                        Take Quiz →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Enhanced Company Info -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="flex mr-3">
+                            <div class="grid grid-cols-2 gap-0.5 w-8 h-8">
+                                <div class="bg-red-500 rounded-sm" style="background: #F25022;"></div>
+                                <div class="bg-green-500 rounded-sm" style="background: #7FBA00;"></div>
+                                <div class="bg-blue-500 rounded-sm" style="background: #00A4EF;"></div>
+                                <div class="bg-yellow-500 rounded-sm" style="background: #FFB900;"></div>
+                            </div>
+                        </div>
+                        <span class="text-xl font-segoe font-bold">Microsoft Careers</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Empowering every person and organization on the planet to achieve more.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-smooth accessibility-focus" aria-label="Microsoft on Twitter">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-smooth accessibility-focus" aria-label="Microsoft on LinkedIn">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-segoe font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                        <li><a href="role_discovery_engine.html" class="text-gray-300 hover:text-accent transition-smooth accessibility-focus">Browse Jobs</a></li>
+                        <li><a href="freshers_career_launch.html" class="text-gray-300 hover:text-accent transition-smooth accessibility-focus">New Graduates</a></li>
+                        <li><a href="career_development_hub.html" class="text-gray-300 hover:text-accent transition-smooth accessibility-focus">Career Development</a></li>
+                        <li><a href="culture_experience_center.html" class="text-gray-300 hover:text-accent transition-smooth accessibility-focus">Our Culture</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 class="font-segoe font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="application_dashboard.html" class="text-gray-300 hover:text-accent transition-smooth accessibility-focus">Application Status</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-smooth accessibility-focus">Interview Prep</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-smooth accessibility-focus">FAQ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-smooth accessibility-focus">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Enhanced Newsletter -->
+                <div>
+                    <h4 class="font-segoe font-semibold mb-4">Stay Updated</h4>
+                    <p class="text-gray-300 mb-4">Get the latest Microsoft job opportunities and career insights.</p>
+                    <div class="flex" role="group" aria-labelledby="newsletter-heading">
+                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 bg-gray-800 border border-gray-600 rounded-l-lg focus:ring-2 focus:ring-accent focus:border-accent focus:outline-none text-white accessibility-focus" aria-label="Email address for newsletter" />
+                        <button class="fluent-button px-4 py-2 rounded-r-lg accessibility-focus" aria-label="Subscribe to newsletter">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">© 2025 Microsoft Corporation. All Rights Reserved. | Privacy Statement | Terms of Use</p>
+                <p class="text-gray-400">Maheswari Pinneti</p>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
